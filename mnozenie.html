@@ -7,17 +7,23 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-    
-    <input type="text" name="ida" id="ida">
-    <input type="text" name="idb" id="idb">
-    <input type="text" name="idc" id="idc" autofocus>
-    <input type="button"  value="Losuj" onclick="newValue()">
-
-
         
-        <input type="submit" name="submit" value="sprawdź" id="submit" onClick="check();">
-        <div id="ekran"></div>
-
+    <div>
+        
+        <div type="" name="ida" id="ida" class="divs"></div>
+        <div type="text" class="divs">X</div>
+        <div type="text" name="idb" id="idb" class="divs"></div>
+        <div type="text" class="divs">=</div>
+        <input type="text" name="idc" class="divs" id="idc" autofocus>
+        <br><br>
+        <input type="button" class="divs1" value="Losuj liczby" onclick="newValue()">
+    </div>
+    <div><div>
+        <br>
+        <input type="submit" name="submit" class="divs" style="width: 720px; height: 130px;" value="Sprawdź" id="submit"  onClick="check();">
+        <br><br>
+        <div id="ekran" class="divs" style="width: 710px; height: 130px;"></div>
+    </div>
         <script src="scripts/functions.js"></script>
     
     </body>

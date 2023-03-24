@@ -1,8 +1,8 @@
-html{
+html {
     background-color: rgb(255, 166, 166);
 }
-h1
-{
+
+h1 {
     background-color: rgba(230, 130, 25, 0.2);
     height: 150px;
     padding-bottom: 50px;
@@ -15,6 +15,56 @@ h1
     color: mediumseagreen;
     
 
+}
+
+.divs {
+ background-color: rgb(52, 203, 153);
+ display: block;
+ font-weight: bold;
+ text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
+ width: 130px;
+ display: inline-block;
+ border: 5px solid white;
+ border-radius: 10px;
+ font-family: cursive;
+ font-size: 500%;
+ text-align: center;
+}
+
+.divs1 {
+    background-color: rgb(52, 203, 153);
+    display: block;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
+    width: 720px;
+    height: 140px;
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 500%;
+    text-align: center;
+   }
+
+.divs2 {
+
+    background-color: rgb(52, 203, 153);
+    display: block;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
+    width: 710px;
+    height: 130px;
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 500%;
+    text-align: center;
+}
+
+
+.wynik {
+    background-color: black;
 }
 
 .div2

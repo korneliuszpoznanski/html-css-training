@@ -6,12 +6,12 @@ function random(){
     return b;
     
 }
-    document.getElementById("ida").value = random();
-    document.getElementById("idb").value = random();
+    document.getElementById("ida").innerHTML = random();
+    document.getElementById("idb").innerHTML = random();
 
 function newValue(){
-    document.getElementById("ida").value = random();
-    document.getElementById("idb").value = random();
+    document.getElementById("ida").innerHTML = random();
+    document.getElementById("idb").innerHTML = random();
     document.getElementById("idc").value = '';
     document.getElementById("ekran").innerHTML = "";
 }
@@ -19,12 +19,14 @@ function newValue(){
 function check(){
     let a,b,c;
     let ekran;
-    a = document.getElementById("ida").value ;
-    b = document.getElementById("idb").value ;
+    a = document.getElementById("ida").innerHTML ;
+    b = document.getElementById("idb").innerHTML ;
     c = document.getElementById("idc").value ;
     a = parseInt(a);
     b = parseInt(b);
     c = parseInt(c);
+    console.log(a);
+    console.log(b);
 
         if (c == a*b) {
             ekran = "BRAWO"
