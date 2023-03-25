@@ -14,6 +14,7 @@ function newValue(){
     document.getElementById("idb").innerHTML = random();
     document.getElementById("idc").value = '';
     document.getElementById("ekran").innerHTML = "";
+    document.getElementById("ekran").setAttribute("style", "background-color:rgb(52, 203, 153); width: 710px; height: 130px;");
 }
 
 function check(){
@@ -29,9 +30,11 @@ function check(){
     console.log(b);
 
         if (c == a*b) {
+            document.getElementById("ekran").setAttribute("style", "background-color:green; width: 710px; height: 130px;");
             ekran = "BRAWO"
             document.getElementById("ekran").innerHTML = ekran;
         } else {
+            document.getElementById("ekran").setAttribute("style", "background-color:red; width: 710px; height: 130px;");
             ekran = "FAŁSZ";
             document.getElementById("ekran").innerHTML = ekran;
         }
