@@ -7,20 +7,40 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>
-            <br>
-            <br>
-            <div class="div1">element</div> 
-            H1
-            lalala
-        </h1>
-        <div class="div2">
-            element
-            <div class="div3">zagnieżdżenie</div>
-        </div><br><br>
-            <a href="mnozenie.html" class="div3">mnożenie</a>
-            <a href="dzielenie.html" class="div3">dzielenie</a>
+        <header>
+        <h2 class="liczenie">Liczenie</h2>
+            <nav class="navigation"> 
+                <button class="btn-popup">Dodawanie</button>
+                <button class="btn-popup">Odejmowanie</button>
+                <button class="btn-popup">Mnożenie</button>
+                <button class="btn-popup">Dzielenie</button>
+            </nav>
+        </header>
 
-    
+        <div class="wrapper">
+            <span class="close">X</span>
+            <div class="from-popup">
+                <h2>Dzielenie</h2>
+                <form action="#">
+                    <div class="zawartosc">
+                        <div class='divs'>
+                            <div class='inside1' type="text" name="ida" id="ida"></div>
+                            <div class='inside2' type="text">X</div>
+                            <div class='inside2' type="text" name="idb" id="idb"></div>
+                            <div class='inside2' type="text">=</div>
+                            <input class='inside2' type="text" name="idc" id="idc" maxlength="2" autofocus>
+                        </div>
+                        <input type="button" class="divs1" value="Losuj liczby" onclick="newValue()">
+                        <input type="submit" name="submit" class="divs1" value="Sprawdź" id="submit"  onClick="check();">
+                        <div id="ekran" class="divs1" style="height: 105px;"></div>
+                    </div>
+                        
+                </form>
+
+            </div>
+
+        </div>
+
+<script src="scripts/functions.js"></script>
     </body>
 </html>

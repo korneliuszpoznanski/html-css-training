@@ -1,3 +1,15 @@
+const wrapper = document.querySelector('.wrapper');
+const btnPopup = document.querySelector('.btn-popup');
+const btnPopupClose = document.querySelector('.close');
+
+btnPopup.addEventListener('click', ()=> {
+    wrapper.classList.add('active-popup');
+});
+
+btnPopupClose.addEventListener('click', ()=> {
+    wrapper.classList.remove('active-popup');
+});
+
 function random(){
     var a;
     var b = '';
@@ -14,7 +26,7 @@ function newValue(){
     document.getElementById("idb").innerHTML = random();
     document.getElementById("idc").value = '';
     document.getElementById("ekran").innerHTML = "";
-    document.getElementById("ekran").setAttribute("style", "background-color:rgb(52, 203, 153); width: 710px; height: 130px;");
+    document.getElementById("ekran").setAttribute("style", "background-color:rgba(255, 255, 255, .8);height: 110px;");
 }
 
 function check(){
@@ -30,11 +42,11 @@ function check(){
     console.log(b);
 
         if (c == a*b) {
-            document.getElementById("ekran").setAttribute("style", "background-color:green; width: 710px; height: 130px;");
+            document.getElementById("ekran").setAttribute("style", "background-color:rgba(0,255,0, .8);height: 110px;");
             ekran = "BRAWO"
             document.getElementById("ekran").innerHTML = ekran;
         } else {
-            document.getElementById("ekran").setAttribute("style", "background-color:red; width: 710px; height: 130px;");
+            document.getElementById("ekran").setAttribute("style", "background-color:rgba(255,0,0, .8);height: 110px;");
             ekran = "FAŁSZ";
             document.getElementById("ekran").innerHTML = ekran;
         }

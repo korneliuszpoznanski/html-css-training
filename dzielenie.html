@@ -6,12 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
-        a<input type="number" id="ida">
-        b<input type="number" id="idb">
-        <input type="button" name="submit" value="oblicz" id="submit" onClick="devide();">
-        <div id="ekran"></div>
+    <div class="zawartosc">
+        <div class='divs'>
+            <div class='inside1' type="text" name="ida" id="ida"></div>
+            <div class='inside2' type="text">X</div>
+            <div class='inside2' type="text" name="idb" id="idb"></div>
+            <div class='inside2' type="text">=</div>
+            <input class='inside2' type="text" name="idc" id="idc" maxlength="2" autofocus>
+        </div>
+        <input type="button" class="divs1" value="Losuj liczby" onclick="newValue()">
+        <input type="submit" name="submit" class="divs1" value="Sprawdź" id="submit"  onClick="check();">
+        <div id="ekran" class="divs1" style="height: 105px;"></div>
+    </div>
         <script src="scripts/functions.js"></script>
-    
     </body>
 </html>
