@@ -1,13 +1,24 @@
-const wrapper = document.querySelector('.wrapper');
+const wrapper1 = document.querySelector('.wrapper1');
+const wrapper2 = document.querySelector('.wrapper2');
 const btnPopup = document.querySelector('.btn-popup');
+const btn2Popup = document.querySelector('.btn2-popup');
 const btnPopupClose = document.querySelector('.close');
 
+
 btnPopup.addEventListener('click', ()=> {
-    wrapper.classList.add('active-popup');
+    wrapper1.classList.add('active-popup');
 });
 
 btnPopupClose.addEventListener('click', ()=> {
-    wrapper.classList.remove('active-popup');
+    wrapper1.classList.remove('active-popup');
+});
+
+btnPopup.addEventListener('click', ()=> {
+    wrapper2.classList.add('active-popup');
+});
+
+btnPopupClose.addEventListener('click', ()=> {
+    wrapper2.classList.remove('active-popup');
 });
 
 function random(){
@@ -26,7 +37,7 @@ function newValue(){
     document.getElementById("idb").innerHTML = random();
     document.getElementById("idc").value = '';
     document.getElementById("ekran").innerHTML = "";
-    document.getElementById("ekran").setAttribute("style", "background-color:rgba(255, 255, 255, .8);height: 110px;");
+    document.getElementById("ekran").setAttribute("style", "background-color:rgba(255, 255, 255, .8);height: 52px;");
 }
 
 function check(){
@@ -42,11 +53,11 @@ function check(){
     console.log(b);
 
         if (c == a*b) {
-            document.getElementById("ekran").setAttribute("style", "background-color:rgba(0,255,0, .8);height: 110px;");
+            document.getElementById("ekran").setAttribute("style", "background-color:rgba(0,255,0, .8);");
             ekran = "BRAWO"
             document.getElementById("ekran").innerHTML = ekran;
         } else {
-            document.getElementById("ekran").setAttribute("style", "background-color:rgba(255,0,0, .8);height: 110px;");
+            document.getElementById("ekran").setAttribute("style", "background-color:rgba(255,0,0, .8);");
             ekran = "FAŁSZ";
             document.getElementById("ekran").innerHTML = ekran;
         }
