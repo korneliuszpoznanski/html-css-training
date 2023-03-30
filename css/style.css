@@ -12,8 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../images/bg.jpg') no-repeat;
-    background-size: cover;
+    background: url('../images/bg.jpg');
+    background-size:cover;
     background-position: center;
 }
 
@@ -23,7 +23,7 @@ body {
     user-select: none;
 }
 
-.navigation .btn-popup {
+[attr="btn-popup"] {
     width: 130px;
     height: 50px;
     background: red;
@@ -38,50 +38,6 @@ body {
     transition: .5s;
 }
 
-.navigation .btn2-popup {
-    width: 130px;
-    height: 50px;
-    background: red;
-    border: 2px solid #000;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size:  1.1em;
-    color: #000;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
-
-.navigation .btn3-popup {
-    width: 130px;
-    height: 50px;
-    background: red;
-    border: 2px solid #000;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size:  1.1em;
-    color: #000;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
-
-.navigation .btn4-popup {
-    width: 130px;
-    height: 50px;
-    background: red;
-    border: 2px solid #000;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size:  1.1em;
-    color: #000;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
-}
 
 .navigation .btn-popup:hover {
     background: #FFF;
@@ -89,7 +45,7 @@ body {
 
 }
 
-.wrapper1 {
+[class^="wrapper"] {
     position: absolute;
     left: 40vw;
     top: 20vh;
@@ -108,11 +64,11 @@ body {
     height: .2s ease;
 }
 
-.wrapper1.active-popup {
+[class$="active-popup"] {
     transform: scale(1);
 }
 
-.wrapper1 .close {
+[class^="close"] {
     position: absolute;
     top: 0;
     right: 0;
@@ -130,131 +86,6 @@ body {
     z-index: 1;
 }
 
-.wrapper2 {
-    position: absolute;
-    left: 40vw;
-    top: 20vh;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 4px solid rgba(0,0,0, .5);
-    border-radius: 40px;
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: .5s ease;
-    height: .2s ease;
-}
-
-.wrapper2.active-popup {
-    transform: scale(1);
-}
-
-.wrapper2 .close2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #FFF;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 30px;
-    cursor: pointer;
-    z-index: 1;
-    
-}
-
-.wrapper3 {
-    position: absolute;
-    left: 40vw;
-    top: 20vh;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 4px solid rgba(0,0,0, .5);
-    border-radius: 40px;
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: .5s ease;
-    height: .2s ease;
-}
-
-.wrapper3.active-popup {
-    transform: scale(1);
-}
-
-.wrapper3 .close3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #FFF;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 30px;
-    cursor: pointer;
-    z-index: 1;
-    
-}
-
-.wrapper4 {
-    position: absolute;
-    left: 40vw;
-    top: 20vh;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 4px solid rgba(0,0,0, .5);
-    border-radius: 40px;
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: .5s ease;
-    height: .2s ease;
-}
-
-.wrapper4.active-popup {
-    transform: scale(1);
-}
-
-.wrapper4 .close4 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #FFF;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 30px;
-    cursor: pointer;
-    z-index: 1;
-    
-}
 
 .from-popup {
     width: 100%;
