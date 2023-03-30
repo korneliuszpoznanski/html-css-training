@@ -7,20 +7,106 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>
-            <br>
-            <br>
-            <div class="div1">element</div> 
-            H1
-            lalala
-        </h1>
-        <div class="div2">
-            element
-            <div class="div3">zagnieżdżenie</div>
-        </div><br><br>
-            <a href="mnozenie.html" class="div3">mnożenie</a>
-            <a href="dzielenie.html" class="div3">dzielenie</a>
+        <header>
+        <h2 class="liczenie">Liczenie</h2>
+            <nav class="navigation"> 
+                <button class="btn-popup" attr="btn-popup">Dodawanie</button>
+                <button class="btn2-popup" attr="btn-popup">Odejmowanie</button>
+                <button class="btn3-popup" attr="btn-popup">Mnożenie</button>
+                <button class="btn4-popup" attr="btn-popup">Dzielenie</button>
+            </nav>
+        </header>
+        <div name="container">
+            <div class="wrapper1" name="wrapper1">
+                <span class="close">X</span>
+                <div class="from-popup">
+                    <h2>Dodawanie</h2>
+                    <form action="#">
+                        <div class="zawartosc">
+                            <div class='divs'>
+                                <div class='inside1' type="text" name="ida-addition" id="ida-addition"></div>
+                                <div class='inside2' type="text">+</div>
+                                <div class='inside2' type="text" name="idb-addition" id="idb-addition"></div>
+                                <div class='inside2' type="text">=</div>
+                                <input class='inside2' type="text" name="idc-addition" id="idc-addition" maxlength="2" autofocus>
+                            </div>
+                            <input type="button" class="divs1" value="Losuj liczby" onclick="newValueAddition()">
+                            <input type="button" name="submit" class="divs1" value="Sprawdź" id="submit"  onClick="checkAddition();">
+                            <div id="ekran-addition" class="divs1" style="height: 52px;"></div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+            
+            
+            <div class="wrapper2" >
+                <span class="close2">X</span>
+                <div class="from-popup">
+                    <h2>Odejmowanie</h2>
+                    <form action="#">
+                        <div class="zawartosc">
+                            <div class='divs'>
+                                <div class='inside1' type="text" name="ida-substraction" id="ida-substraction"></div>
+                                <div class='inside2' type="text">-</div>
+                                <div class='inside2' type="text" name="idb-substraction" id="idb-substraction"></div>
+                                <div class='inside2' type="text">=</div>
+                                <input class='inside2' type="text" name="idc-substraction" id="idc-substraction" maxlength="2" autofocus>
+                            </div>
+                            <input type="button" class="divs1" value="Losuj liczby" onclick="newValueSubstraction()">
+                            <input type="button" name="submit" class="divs1" value="Sprawdź" id="submit"  onClick="checkSubstraction();">
+                            <div id="ekran-substraction" class="divs1" style="height: 52px;"></div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
 
-    
+            <div class="wrapper3" >
+                <span class="close3">X</span>
+                <div class="from-popup">
+                    <h2>Mnożenie</h2>
+                    <form action="#">
+                        <div class="zawartosc">
+                            <div class='divs'>
+                                <div class='inside1' type="text" name="ida-multiply" id="ida-multiply"></div>
+                                <div class='inside2' type="text">X</div>
+                                <div class='inside2' type="text" name="idb-multiply" id="idb-multiply"></div>
+                                <div class='inside2' type="text">=</div>
+                                <input class='inside2' type="text" name="idc-multiply" id="idc-multiply" maxlength="2" autofocus>
+                            </div>
+                            <input type="button" class="divs1" value="Losuj liczby" onclick="newValueMultiply()">
+                            <input type="button" name="submit" class="divs1" value="Sprawdź" id="submit"  onClick="checkMultiply();">
+                            <div id="ekran-multiply" class="divs1" style="height: 52px;"></div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+
+            <div class="wrapper4" >
+                <span class="close4">X</span>
+                <div class="from-popup">
+                    <h2>Dzielenie</h2>
+                    <form action="#">
+                        <div class="zawartosc">
+                            <div class='divs'>
+                                <div class='inside1' type="text" name="ida-divide" id="ida-divide"></div>
+                                <div class='inside2' type="text">/</div>
+                                <div class='inside2' type="text" name="idb-divide" id="idb-divide"></div>
+                                <div class='inside2' type="text">=</div>
+                                <input class='inside2' type="text" name="idc-divide" id="idc-divide" maxlength="2" autofocus>
+                            </div>
+                            <input type="button" class="divs1" value="Losuj liczby" onclick="newValueDivide()">
+                            <input type="button" name="submit" class="divs1" value="Sprawdź" id="submit"  onClick="checkDivide();">
+                            <div id="ekran-divide" class="divs1" style="height: 52px;"></div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+<script src="scripts/functions.js"></script>
+<script src="scripts/wrappers.js"></script>
+<script src="scripts/multiply.js"></script>
+<script src="scripts/addition.js"></script>
+<script src="scripts/substraction.js"></script>
+<script src="scripts/divide.js"></script>
     </body>
 </html>

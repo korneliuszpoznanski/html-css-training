@@ -1,5 +1,118 @@
-html {
-    background-color: rgb(255, 166, 166);
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/bg.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.liczenie {
+    font-size: 2em;
+    color: #000;
+    user-select: none;
+}
+
+[attr="btn-popup"] {
+    width: 130px;
+    height: 50px;
+    background: red;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:  1.1em;
+    color: #000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+
+.navigation .btn-popup:hover {
+    background: #FFF;
+    color: #000;
+
+}
+
+[class^="wrapper"] {
+    position: absolute;
+    left: 40vw;
+    top: 20vh;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 4px solid rgba(0,0,0, .5);
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: .5s ease;
+    height: .2s ease;
+}
+
+[class$="active-popup"] {
+    transform: scale(1);
+}
+
+[class^="close"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.from-popup {
+    width: 100%;
+    padding: 40px;
+}
+
+
+.from-popup h2 {
+    font-size: 3em;
+    color: #000;
+    text-align: center;
+}
+
+.zawartosc {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
 }
 
 h1 {
@@ -17,85 +130,50 @@ h1 {
 
 }
 
-.divs {
- background-color: rgb(52, 203, 153);
- display: block;
- font-weight: bold;
- text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
- width: 130px;
- display: inline-block;
- border: 5px solid white;
- border-radius: 10px;
- font-family: cursive;
- font-size: 500%;
- text-align: center;
+
+.divs .inside1 {
+    background-color: rgba(255, 255, 255, .8);
+    width: 100%;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 200%;
+    text-align: center;
+    align-items: center;
+    float: left;
+    width: 19%;
+    padding: 2px;
+}
+
+.divs .inside2 {
+    background-color: rgba(255, 255, 255, .8);
+    font-weight: bold;
+    text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 200%;
+    text-align: center;
+    align-items: center;
+    float: left;
+    width: 19%;
+    margin-left: 1.25%;
+    padding: 2px;
 }
 
 .divs1 {
-    background-color: rgb(52, 203, 153);
-    display: block;
+    background-color: rgba(255, 255, 255, .8);
     font-weight: bold;
     text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
-    width: 720px;
-    height: 140px;
+    width: 100%;
+    padding: 2px;
     display: inline-block;
     border: 5px solid white;
     border-radius: 10px;
     font-family: cursive;
-    font-size: 500%;
+    font-size: 200%;
     text-align: center;
    }
-
-.divs2 {
-
-    background-color: rgb(52, 203, 153);
-    display: block;
-    font-weight: bold;
-    text-shadow: 1px 2px 2px blue, 0 0 25px white, 0 0 5px white;
-    width: 710px;
-    height: 130px;
-    display: inline-block;
-    border: 5px solid white;
-    border-radius: 10px;
-    font-family: cursive;
-    font-size: 500%;
-    text-align: center;
-}
-
-
-.wynik {
-    background-color: black;
-}
-
-.div2
-{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(137, 225, 137);
-    color: rgb(17, 26, 203);
-    font-size: x-large;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: width 2s, height 1s;
-    padding: 50px;
-    border: 4px black;
-    border-style: solid;
-
-}
-
-.div2:hover
-{
-    width: 300px;
-    height: 300px;
-}
-
-.div3{
-    background-color:cornflowerblue;
-    color: aqua;
-    padding: 10px;
-    width: 300px;
-    border-radius: 10px;
-    border-color: aliceblue;
-    border-style: solid;
-    border-width: 2px;
-}
